@@ -1,0 +1,33 @@
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+	margin: 0;
+	background: url('./images/bg.png') no-repeat center center;
+	background-size: cover;
+}
+.text-sign {
+	position: absolute;
+	padding-left: 50px;
+	font-size: 40px;
+	font-weight: bold;
+	color: black;
+	-webkit-text-fill-color: transparent;
+   	-webkit-text-stroke: 2px black;
+}
+.text-sign:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	width: 44px;
+	height: 44px;
+	background: url('./images/lovelysun.png') no-repeat 0 0;
+	background-size: contain;
+}
+.text-sign[data-state='success']:before {
+	background-image: url('./images/lovelysun.png');
+}
+.text-sign[data-state='failure']:before {
+	background-image: url('./images/lovelysun2.png');
+}
